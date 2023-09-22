@@ -31,10 +31,10 @@ Correlation $\ne$ Causation
 Finding the linear function that approximates the output  
 $y_n \approx f(x_{n}) \coloneqq w_{0} + w_{1}x_{n1}$  
 Multivariate -> A bigger polynomial  
-$f(x_{n}) = \tilde{x}_{n}^\top \tilde{W}$ , where $\tilde{x}_{n}$ means adding the bias term as a 1 to the $x_{n}$ array (It now has $D+1$ dimension).  
+$f(x_{n}) = \tilde{x} \_{n}^\top \tilde{W}$ , where $\tilde{x} \_{n}$ means adding the bias term as a 1 to the $x_{n}$ array (It now has $D+1$ dimension).  
 The goal is to learn the $\tilde{W}$ array.
 
-### Overparametrization - $D > N$
+### Overparametrization - D > N
 
 The tasks becomes **undetermined** -> Multiple possible solutions.  
 Quite common in deep learning.  
@@ -49,22 +49,22 @@ Regularization is a solution.
     * Large and Very Large mistakes should be penalized the same
 * Robust Statistics -> Statistics good for a wide range of distributions
 * Mean Square Error (MSE)
-    * $\frac 1 N \sum _{n=1} ^N [y_{n} - f_{w}(x_{n})]^2$
+    * $\frac 1 N \displaystyle\sum_{n=1}^{N} [y_{n} - f_{w}(x_{n})]^2$
     * Sensible to outliers
 * Mean Absolute Error (MAE)
-    * $\frac 1 N \sum _{n=1} ^N |y_{n} - f_{w}(x_{n})|$
+    * $\frac 1 N \displaystyle\sum_{n=1}^{N} |y_{n} - f_{w}(x_{n})|$
     * Better with outliers
 * Huber Loss
-    * $\text{Huber}(e) = \begin{cases} \frac 1 2 e^2 &\text{, if } |e| \le \delta \\ \delta |e| - \frac 1 2 \delta ^2 &\text{, if } |e| > \delta\end{cases}$
+    * $`\text{Huber}(e) = \begin{cases} \frac 1 2 e^2 &\text{, if } \|e\| \le \delta \\ \delta \|e\| - \frac 1 2 \delta ^2 &\text{, if } \|e\| > \delta\end{cases}`$
     * convex, differentiable, robust to outliers
 * Tukey's bisquare Loss
-    * $\frac {\delta L} {\delta e} = \begin{cases} e \lbrace 1 - \frac {e^2} {\delta ^ 2} \rbrace \text{, if } |e| \le \delta \\ 0 \text{, if } |e| > \delta \end{cases}$
+    * $`\frac {\delta L} {\delta e} = \begin{cases} e \lbrace 1 - \frac {e^2} {\delta ^ 2} \rbrace \text{, if } |e| \le \delta \\ 0 \text{, if } |e| > \delta \end{cases}`$
     * Non convex, but robust
 
 ### Convexity
 
 * Shape of U
-* $h(\lambda u + (1 - \lambda)v) \le \lambda h(u) + (1 - \lambda)h(v);$ with $\forall u, v \in \R ^D 0 \le \lambda \le 1$ 
+* $`h(\lambda u + (1 - \lambda)v) \le \lambda h(u) + (1 - \lambda)h(v); \forall u, v \in R^D; 0 \le \lambda \le 1`$ 
 * Strictly Convex -> Strict inequality
 * Any local minimum is global minimum
 
