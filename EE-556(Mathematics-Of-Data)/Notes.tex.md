@@ -28,19 +28,19 @@ Extract information from data while understanding trade-offs.
 * Checks how different the current function is from the ideal function (from a statistical standpoint).  
 * Measures data fidelity.
 * (a, b) Error should be positive and 0 only if the inputs are equal 
-* (c) Symetric $d(b_{1}, b_{2}) = d(b_{2}, b_{1})$
-* (d) Should satisfy the triangle inequality $d(b_{1}, b_{2}) \le d(b_{1}, b_{3}) + d(b_{3}, b_{2})$ 
+* (c) Symetric $`d(b_{1}, b_{2}) = d(b_{2}, b_{1})`$
+* (d) Should satisfy the triangle inequality $`d(b_{1}, b_{2}) \le d(b_{1}, b_{3}) + d(b_{3}, b_{2})`$ 
     * metric -> a, b, c, d
     * pseudo-metric -> a, b, c
     * divergence -> a, b
 
 * Logistic Loss (For Classification)
-    * $b_{1} \in \R$ and $b_{2} \in \pm 1$
-    * $L(b_{1}, b_{2}) = \log_{2} (1 + exp(-b_{1} \times b_{2}))$ 
-* $l_{q}$ loss
+    * $`b_{1} \in R`$ and $`b_{2} \in \pm 1`$
+    * $`L(b_{1}, b_{2}) = \log_{2} (1 + exp(-b_{1} \times b_{2}))`$ 
+* $`l_{q}`$ loss
     * Basically distance with a certain power
-    * $L_{q}(b_{1}, b_{2}) = \lVert b_{1} - b_{2} \rVert _{q} ^q = \sum _{i=1} ^n | b_{1i} - b_{2i} | ^q$ 
-    * $b_{2}$ can be 0 => $ \lVert b \rVert _{q} ^q = \sum _{i=1} ^n | b_{i} | ^q$
+    * $`L_{q}(b_{1}, b_{2}) = \lVert b_{1} - b_{2} \rVert _{q} ^q = \displaystyle\sum _{i=1} ^n | b_{1i} - b_{2i} | ^q`$ 
+    * $`b_{2}`$ can be 0 => $` \lVert b \rVert _{q} ^q = \displaystyle\sum _{i=1} ^n | b_{i} | ^q`$
 * Wasserstein Distance (First Lecture)
     * How hard it is to transform one distribution into another (Area between CDFs)
     * Sensitive to outliers
@@ -48,10 +48,10 @@ Extract information from data while understanding trade-offs.
 ### Statistical Learning Model
 
 * Consists of 3 parts:
-    * Sample of random variables $(a_{i}, b_{i}) \in A \times B$ 
-    * A class of functions $h^\circ \in H^\circ$ (The model)
-    * The Loss function $L: B \times B \rightarrow \R$
-* Risk of $h^\circ$ => Expected value of $(a, b)$ random variables
+    * Sample of random variables $`(a_{i}, b_{i}) \in A \times B`$ 
+    * A class of functions $`h^\circ \in H^\circ`$ (The model)
+    * The Loss function $`L: B \times B \rightarrow R`$
+* Risk of $`h^\circ`$ => Expected value of $`(a, b)`$ random variables
 * Minimize Risk Empirically:
     * We estimate the function class $H$ and we take the function with the smallest risk
 
@@ -64,13 +64,13 @@ Extract information from data while understanding trade-offs.
 
 * Gives a parameter (From a Parameter Space $X$) based on samples
 * Least Squares:
-    * $L_{2}$
+    * $`L_{2}`$
 * Maximum Likelihood:
-    * $-\log p_{x}(b)$ where $p_{x}$ is the probability distribution function for the x (parameters of the function)
+    * $`-\log p_{x}(b)$ where $p_{x}`$ is the probability distribution function for the x (parameters of the function)
     * We try to maximize the probability of observing most of the samples
     * **IMPORTANT:** The ML Estimator converges to the optimal parameter from the Parameter Space
     * However it is not always the best 
-* M-Estimator: $x_{M}^\star \in \arg \min{F(x)}$
+* M-Estimator: $`x_{M}^\star \in \arg \min{F(x)}`$
 
 TODO: Complete at Lecture 2
 
