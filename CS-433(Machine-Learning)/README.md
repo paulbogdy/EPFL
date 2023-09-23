@@ -68,7 +68,7 @@ Regularization is a solution.
 * Strictly Convex -> Strict inequality
 * Any local minimum is global minimum
 
-## Usefull Links
+## Useful Links
 * [Discussion Forum](https://edstem.org/eu/courses/797/discussion/)
 * [Videos of the Lectures](https://mediaspace.epfl.ch/channel/CS-433+Machine+learning/55647)
 * [Course github](https://github.com/epfml/ML_course)
