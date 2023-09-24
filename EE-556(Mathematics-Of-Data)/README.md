@@ -60,6 +60,10 @@ Extract information from data while understanding trade-offs.
 * Basically the more samples you have the closer you are to the actual expected value
 * $X$ random variable, The mean of samples converges to the expected value
 
+### Central limit theorem
+
+* The distribution of normalized sample tends to the normal distribution
+
 ### Estimator
 
 * Gives a parameter (From a Parameter Space $X$) based on samples
@@ -72,7 +76,43 @@ Extract information from data while understanding trade-offs.
     * However it is not always the best 
 * M-Estimator: $`x_{M}^\star \in \arg \min{F(x)}`$
 
-TODO: Complete at Lecture 2
+### Probability (Supplementary)
+
+* Sample space $`\Omega`$
+* Event -> subset of sample space $`E \subset \Omega`$
+* Principle of inclusion-exclusion: $`P(A \cup B) = P(A) + P(B) - P(A \cap B)`$
+* Marginal probability -> The probability of an event $`A`$ to occur $`P(A)`$
+* Joint probability -> $`P(A, B)`$ both events occuring
+* Conditional Probability ->  $`P(A|B)`$ probability of A happening if B happened
+* Bayes rule -> $`P(A|B) = \frac {P(B|A)P(A)} {P(B)}`$
+* Random variable -> function from value to outcome of the experiment
+* Probability mass function (Pmf) -> $`P(X = x)`$ probability that the random variable has that value
+* Probability density function (Pdf):
+    * The integral over $`[a, b]`$ is the probability of x being in that interval
+    * Basically Pmf for non-discrete functions
+* $`p(x, y) = p(x|y)p(y)`$
+* Expectation (Expected Value) $`\mathbb{E}[X]`$:
+    * Discrete -> average of all probabilities multiplied by the value
+    * Continous -> Integral of $`xp(x)`$
+* Variance: $`\mathbb{V} = \sum {(x - \mathbb{E}[X])^2}P(X = x)`$
+    * Integral if continous
+* Covariance: $`\text{cov}[x, y] = \mathbb{E}[(x - \mathbb{E}[x])(y - \mathbb{E}[y])]`$
+
+### Complexity (Supplementary)
+
+* $`\Omicron`$ -> Bigger than the actual function
+* $`\Omega`$ -> Smaller than the actual function
+* $`\Theta`$ -> Around that function
+
+### Kernels (Supplementary)
+
+* $`\phi: A \rightarrow H`$ text embedding
+* $`K(a, b) = \langle \phi (a), \phi (b) \rangle`$ (Kernel), inner product of the embeddings
+* Basically comperes the similarity between embeddings
+* Hilbert Space
+    * Linear Vector Space
+    * Has an inner product operation
+    * Has the distance $`|x - y| = \sqrt {\langle x - y, y - x\rangle}`$
 
 ## Usefull Links
 * [Zoom for lectures and exercises](https://go.epfl.ch/mod-zoom) (Passcode: 994779)
