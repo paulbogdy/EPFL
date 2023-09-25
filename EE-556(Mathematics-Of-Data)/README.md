@@ -54,6 +54,7 @@ Extract information from data while understanding trade-offs.
 * Risk of $`h^\circ`$ => Expected value of $`(a, b)`$ random variables
 * Minimize Risk Empirically:
     * We estimate the function class $H$ and we take the function with the smallest risk
+* Parametric model -> can be represented by parameters
 
 ### Law of Large Numbers
 
@@ -75,6 +76,8 @@ Extract information from data while understanding trade-offs.
     * **IMPORTANT:** The ML Estimator converges to the optimal parameter from the Parameter Space
     * However it is not always the best 
 * M-Estimator: $`x_{M}^\star \in \arg \min{F(x)}`$
+    * Minimization type estimator (As minimization problems)
+* Exam question: With a distribution and a linear function define the estimator
 
 ### Probability (Supplementary)
 
@@ -97,6 +100,7 @@ Extract information from data while understanding trade-offs.
 * Variance: $`\mathbb{V} = \sum {(x - \mathbb{E}[X])^2}P(X = x)`$
     * Integral if continous
 * Covariance: $`\text{cov}[x, y] = \mathbb{E}[(x - \mathbb{E}[x])(y - \mathbb{E}[y])]`$
+* Precision Matrix -> Inverse of Covariance matrix
 
 ### Complexity (Supplementary)
 
@@ -114,6 +118,14 @@ Extract information from data while understanding trade-offs.
     * Has an inner product operation
     * Has the distance $`|x - y| = \sqrt {\langle x - y, y - x\rangle}`$
 
+### Regression
+
+* Gaussian linear regression model: $b_{i} = `\langle a_{i}, x \rangle + w_{i}`$
+* Logistic regression model
+    * Come with a score -> assign a probability: $`\frac 1 {1 + \text{exp} (-s_{x}(a))}`$ where $`s_{x}`$ is the score
+    * When the score function is linear, we have a linear classifier
+
 ## Usefull Links
 * [Zoom for lectures and exercises](https://go.epfl.ch/mod-zoom) (Passcode: 994779)
 * [Recorded Videos](https://mediaspace.epfl.ch/channel/EE-556%2BMathematics%2Bof%2Bdata%253A%2Bfrom%2Btheory%2Bto%2Bcomputation/30469)
+* [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
