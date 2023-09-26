@@ -16,6 +16,24 @@ This file contains the notes I took during the 2023 Ethics [(DH-415)](https://dl
 
 ## Content
 
+### Navigation Tool
+
+* Ethics in the technology
+    * Data Ethics
+    * Algorithms Ethics
+    * Interface / Design Ethics
+    * Sustainability
+    * Integration in decision making processes
+* Social Justice
+    * Impact on Labor Market
+    * Impact on social interactions
+    * Impact on the conduct of war
+    * Impact on inaquality and access to technology
+* Impact on naratives framing
+    * The competition human-machine
+    * The specifities of human beings
+    * The meaning and purpose of life
+
 ### The ethical agency of AI developers
 
 * Interviewed 40 candidates in the realm of AI/ML/DS
@@ -31,6 +49,10 @@ This file contains the notes I took during the 2023 Ethics [(DH-415)](https://dl
 * What ethics is not: A set of laws
 * Ethics summerized: Consider all the agents involved in your action
 * Utilitarism has a great reasoning in ethics. Other motivations should be well argumented
+* Values are at different levels:
+    * Personal
+    * Organisation values
+    * Societal values
 
 ### Translating Values into Design Requirements
 
@@ -64,5 +86,16 @@ This file contains the notes I took during the 2023 Ethics [(DH-415)](https://dl
     * Conduct a form of life analysis (How it modifies the life)
     * Indentify intrinsec concerns
     * Identify easier solutions (Less tech sophisticated)
+
+### Ethical theories
+
+* Utilitarism:
+    * Produce gratest good for the most people
+* Dentology:
+    * Focus on principles / values
+* Virtue Ethics:
+    * 
+* Contract Theory:
+    * Principles and Rules are set by people
 
 ## Useful Links
