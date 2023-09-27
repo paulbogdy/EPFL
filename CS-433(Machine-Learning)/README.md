@@ -68,7 +68,40 @@ Regularization is a solution.
 * Strictly Convex -> Strict inequality
 * Any local minimum is global minimum
 
+### Learning / Fitting
+
+* Having a cost function $`L(w)`$ we want to find $`w^{\star}`$ that minimizez the cost
+    * => Optimization Problem => Optimization Algorithm
+* Grid Search (Basically search every solution)
+* Gradient Descent
+
+### Gradient Descent
+
+* Linear MSE:
+    * $`L(w) = \frac 1 {2N} \displaystyle\sum_{n=1}^N (y_{n} - x_{n} ^\top w)^2 = \frac 1 {2N} e^\top e`$
+    * $`\nabla L(w) = - \frac 1 N X^\top e`$ where $`e`$ is the error (MSE)
+* Stochastic Gradient Descent (SGD):
+    * Basically use only one data point instead of all the data points
+    * Used over sums: $`L(w) = \frac 1 N \displaystyle\sum_{n=1}^N L_{n}(w)`$
+    * SGD Algorithm: $`w^{(t+1)} = w^{(t)} - \gamma \nabla L_{n} (w^{(t)})`$
+    * If we choose n randomly => $`\mathbb{E}[\nabla L_{n}(w)] = \nabla L(w)`$
+* Mini-batch SGD:
+    * Use batches instead of unique samples (to remove variance)
+* SGD with momentum for gradient $`g`$: 
+    * $`m^{(t+1)} = \beta_{1} m^{(t)} + (1-\beta_{1})g`$
+    * $`x^{(t+1)} = x^(t) - \gamma m^{(t+1)}`$
+* Adam for gradient $`g`$:
+    * $`m^{(t+1)} = \beta_{1} m^{(t)} + (1-\beta_{1})g`$
+    * $`v_{i}^{(t+1)} = \beta_{2} v_{i}^{(t)} + (1-\beta_{2})(g_{i})^2`$
+    * $`x_{i}^{(t+1)} = x_{i}^{(t)} - \frac \gamma {\sqrt{v_{i}^{(t+1)}}} m_{i}^{(t+1)}`$
+
+### Non-Smooth Optimitzation
+    * Basically what's hapenning when the function is not differentiable
+    * When there is no gradient, we just put the subgradient
+
+
 ## Useful Links
 * [Discussion Forum](https://edstem.org/eu/courses/797/discussion/)
 * [Videos of the Lectures](https://mediaspace.epfl.ch/channel/CS-433+Machine+learning/55647)
 * [Course github](https://github.com/epfml/ML_course)
+* [Derivate Vectors website](https://www.matrixcalculus.org/)
