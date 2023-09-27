@@ -18,6 +18,27 @@ This file contains the notes I took during the 2023 ADA [(CS-401)](https://dlab.
 
 ## Content
 
+### Handling data
+
+* It's important how you think about the world -> In order to be able to model it
+* Imperative language -> Specify how to do it
+* Declarative language -> Specify what you want to do (The framework figures out how)
+* Flat model
+    * One type of entity
+    * Example: log files, csv files
+* Relational model
+    * Many entityes
+    * Connected by relationships (Basically databases)
+* Document model
+    * Hirarchy
+    * Example: XML, JSON
+* Network model
+* Most websites don't let you scrape data -> Preferably use API
+* Data wrangling
+    * Extract and standardize raw data
+    * Clean anomalies
+* Captcha was used as a solution to translate New York time
+
 ## Useful Links
 * [Discussion Forum](https://edstem.org/eu/courses/808/discussion/)
 * [Communication Guidelines](https://dlab.epfl.ch/teaching/fall2023/cs401/communication-guidelines/)
