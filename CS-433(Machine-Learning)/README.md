@@ -96,9 +96,33 @@ Regularization is a solution.
     * $`x_{i}^{(t+1)} = x_{i}^{(t)} - \frac \gamma {\sqrt{v_{i}^{(t+1)}}} m_{i}^{(t+1)}`$
 
 ### Non-Smooth Optimitzation
-    * Basically what's hapenning when the function is not differentiable
-    * When there is no gradient, we just put the subgradient
 
+* Basically what's hapenning when the function is not differentiable
+* When there is no gradient, we just put the subgradient
+
+### Constrained Optimization
+
+* $`w`$ is part of a constraint set
+* Projected Gradient Descent
+    * Do basic gradient descent -> Take the closest constrained point
+* Transform into an unconstrained problem
+    * Use penalty functions
+
+### Convex sets
+
+* Line from any 2 points is inside the set
+* Projections onto convex sets are unique
+* IMPORTANT not related: Matrix is pozitive semidefinite if all it's eigenvalues are non negative
+
+### Implementation issues
+
+* When to stop the training ?
+* Optimality
+    * Second order derivative is positive semi-definite => minimum
+    * If convex => global min
+* Step size selection
+* Line-search 
+* Feature normalization -> always normalize input features
 
 ## Useful Links
 * [Discussion Forum](https://edstem.org/eu/courses/797/discussion/)
