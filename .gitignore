@@ -3,3 +3,5 @@
 *interactive_data.csv*
 *.csv
 *.png
+*.xls
+*.pkl
