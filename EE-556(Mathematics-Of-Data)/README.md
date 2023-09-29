@@ -125,6 +125,23 @@ Extract information from data while understanding trade-offs.
     * Come with a score -> assign a probability: $`\frac 1 {1 + \text{exp} (-s_{x}(a))}`$ where $`s_{x}`$ is the score
     * When the score function is linear, we have a linear classifier
 
+### Linear Algebra
+
+* Vector Norms:
+* Quasy-Norms -> Does not satisfy triangle inequality
+* Pseudo-Norms -> Does not satisfy definitiveness
+* $`l_{0}`$ Norm -> Counts the number of non-zero elems
+* Dual Norm:
+    * $`\Vert x \Vert ^ \star = \text{sup}_{\Vert y \Vert \le 1} x^\top y`$
+    * $`\Vert x \Vert ^ {\star \star} = \Vert x \Vert`$
+* Matrix Norms (Same restrictions as Vector Norms)
+* Matrix inner product: $`\langle A, B \rangle = \text{trace} (AB^\top) = \langle \text{vec}(A), \text{vec}(B) \rangle`$
+* Schatten q-norms $`\Vert A \Vert _{q} = (\displaystyle \sum _{i=1} ^p (\sigma (A)_{i})^q)^{\frac 1 q}`$
+* Every $`l_{q}`$ norms are convex
+* Think of matrices in terms of eigenvalues
+* Question on convergence rates in exam
+* Reading convergence plots is in the exam
+
 ## Usefull Links
 * [Zoom for lectures and exercises](https://go.epfl.ch/mod-zoom) (Passcode: 994779)
 * [Recorded Videos](https://mediaspace.epfl.ch/channel/EE-556%2BMathematics%2Bof%2Bdata%253A%2Bfrom%2Btheory%2Bto%2Bcomputation/30469)
