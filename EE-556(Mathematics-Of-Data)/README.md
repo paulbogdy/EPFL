@@ -142,6 +142,20 @@ Extract information from data while understanding trade-offs.
 * Question on convergence rates in exam
 * Reading convergence plots is in the exam
 
+### Iterative Descent
+
+* Solving optimization problems is impossible -> We need approximations
+    * $`\epsilon`$ optimal if: $`f(x_{\epsilon} ^ \star) - f^\star \le \epsilon`$
+    * $`\epsilon`$ optimal in sequence if: $`\Vert x_{\epsilon} ^ \star - x^\star \Vert \le \epsilon`$
+* Finding Solutions:
+    * Guess a solution -> refine it based on observation -> repeat
+* Finding initial solution in the domain of the problem can be a problem in itself
+* No tricks in exams !!!
+* Gradient locally is the best direction, but is not the globally best direction
+* Proximal point method -> Use the gradient of $`x^{k+1}`$
+* The gradient has sort of a fog of war (Can only see slightly around)
+* How to pick step size
+
 ## Usefull Links
 * [Zoom for lectures and exercises](https://go.epfl.ch/mod-zoom) (Passcode: 994779)
 * [Recorded Videos](https://mediaspace.epfl.ch/channel/EE-556%2BMathematics%2Bof%2Bdata%253A%2Bfrom%2Btheory%2Bto%2Bcomputation/30469)
