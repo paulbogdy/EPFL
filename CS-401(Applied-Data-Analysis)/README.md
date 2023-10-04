@@ -39,6 +39,24 @@ This file contains the notes I took during the 2023 ADA [(CS-401)](https://dlab.
     * Clean anomalies
 * Captcha was used as a solution to translate New York time
 
+### Data Visualization
+
+* There is a shift from static visualization to interactive
+* PCA can be used to should multidimensional data
+* Choose axes wisely (Linear vs Logarithmic)
+* Power Law: Heavy-tailed data
+    * Very large values are rare, but not very rare
+    * Doesn't really make sense to work with means -> Use medians
+* Complementary cumulative distribution function -> The probability of a poin being at least x
+* Show data uncertainty
+* Use colors wisely:
+    * Sequential -> color from low to high
+    * Diverging -> 2 seq colors
+    * Categorical -> Different colors
+* Use colorblind-safe palettes
+* Don't zoom in on bar charts (People assume bottom is 0)
+
+
 ## Useful Links
 * [Discussion Forum](https://edstem.org/eu/courses/808/discussion/)
 * [Communication Guidelines](https://dlab.epfl.ch/teaching/fall2023/cs401/communication-guidelines/)
